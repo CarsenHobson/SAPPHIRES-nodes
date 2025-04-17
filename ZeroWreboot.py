@@ -2,7 +2,7 @@ import paho.mqtt.client as mqtt
 import os
 import time
 
-# MQTT settings
+
 MQTT_BROKER = "10.42.0.1"
 MQTT_PORT = 1883
 MQTT_TOPIC = "Reset2"
@@ -41,7 +41,7 @@ if __name__ == "__main__":
     client.connect(MQTT_BROKER, MQTT_PORT, 60)
     client.loop_start()
 
-    # Wait for59 seconds to receive the message
+    # Wait for 59 seconds to receive the message
     time.sleep(59)
 
     client.loop_stop()
