@@ -1,0 +1,7 @@
+@reboot sleep 20 && python /home/zerow#/startsps30.py
+* * * * * python /home/zerow#/zerow.py
+30 8 * * * python /home/zerow#/stopsps30.py
+35 8 * * * python /home/zerow#/startsps30.py
+30 18 * * * python /home/zerow#/stopsps30.py
+35 18 * * * python /home/zerow#/startsps30.py
+* * * * * python /home/zerow#/ZeroWreboot.py
