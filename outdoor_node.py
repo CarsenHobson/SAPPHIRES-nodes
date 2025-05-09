@@ -12,7 +12,7 @@ broker_address = "10.42.0.1"
 mqtt_topic = "ZeroW1" #change this to correspond to the correct node for the house e.g ZeroW#
 
 
-logging.basicConfig(filename='/home/zerow1/logfile.log',level=logging.DEBUG, format='%(asctime)s %(message)')
+logging.basicConfig(filename='/home/outdoor/logfile.log',level=logging.DEBUG, format='%(asctime)s %(message)')
 
 def on_publish(client, userdata, result):
     pass
